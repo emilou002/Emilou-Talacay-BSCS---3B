@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capten - Food Shop</title>
+    <link rel="stylesheet" href="css/boostrap.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+      <img src="images/logo.png" alt="Capten Logo" class="logo" />
+      <h1>Capten</h1>
+      <a
+        href="https://foodthribe.github.io/foodthribe-landing-page/index.html?fbclid=IwY2xjawGaWzRleHRuA2FlbQIxMAABHWKBlFalYpOvsNvP8otT4y5wkWdMfB5ZCYGcOWYYGoT9N6d8NzTtW4VLpA_aem_NzAGXPEmNcQQ8KlCbj0cyw"
+        class="nav-item"
+        >Home</a
+      >
+      <a
+        href="https://foodthribe.github.io/foodthribe-landing-page/home.html"
+        class="nav-item"
+        >members</a
+      >
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main">
+      <!-- Sidebar Toggle Button for Mobile -->
+      <div class="sidebar-toggle" id="sidebarToggle">&#9776;</div>
+
+      <div class="container">
+        <div class="product-grid">
+          <!-- Product Card 1 -->
+          <div class="product-card">
+            <img
+              src="images/double-cheese-burger.jpg"
+              alt="Double Cheese Burger"
+              class="product-img"
+            />
+            <div class="product-details">
+              <h5 class="product-title">Double Cheese Burger</h5>
+              <p class="product-description">
+                Two juicy beef patties, oozing with cheese, crispy lettuce, and
+                a tangy sauce.
+              </p>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="product-card">
+            <img
+              src="images/spicy-chicken-wings.webp"
+              alt="Spicy Chicken Wings"
+              class="product-img"
+            />
+            <div class="product-details">
+              <h5 class="product-title">Spicy Chicken Wings</h5>
+              <p class="product-description">
+                Crispy chicken wings tossed in a spicy hot sauce, served with a
+                cooling ranch dip.
+              </p>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="product-card">
+            <img
+              src="images/vegan-wrap.jpg"
+              alt="Vegan Wrap"
+              class="product-img"
+            />
+            <div class="product-details">
+              <h5 class="product-title">Vegan Wrap</h5>
+              <p class="product-description">
+                A healthy wrap filled with grilled veggies, quinoa, and hummus.
+              </p>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="product-card">
+            <img
+              src="images/loaded-fries.jpg"
+              alt="Loaded Fries"
+              class="product-img"
+            />
+            <div class="product-details">
+              <h5 class="product-title">Loaded Fries</h5>
+              <p class="product-description">
+                Crispy fries topped with cheese, bacon, jalapenos, and a creamy
+                dipping sauce.
+              </p>
+            </div>
+          </div>
+
+          <!-- Product Card 5 -->
+          <div class="product-card">
+            <img
+              src="images/grilled.jpg"
+              alt="Grilled Veggie Salad"
+              class="product-img"
+            />
+            <div class="product-details">
+              <h5 class="product-title">Grilled Veggie Salad</h5>
+              <p class="product-description">
+                A refreshing salad with grilled zucchini, bell peppers, and a
+                light lemon vinaigrette.
+              </p>
+            </div>
+          </div>
+
+          <!-- Product Card 6 -->
+          <div class="product-card">
+            <img
+              src="images/cheese.webp"
+              alt="Cheese Stuffed Pretzels"
+              class="product-img"
+            />
+            <div class="product-details">
+              <h5 class="product-title">Cheese Stuffed Pretzels</h5>
+              <p class="product-description">
+                Warm, soft pretzels filled with melted cheese, perfect for a
+                snack.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <p>&copy; 2024 Capten | All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and custom script for toggling the sidebar -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Toggle sidebar on mobile
+      const sidebar = document.querySelector(".sidebar");
+      const sidebarToggle = document.getElementById("sidebarToggle");
+
+      sidebarToggle.addEventListener("click", function () {
+        sidebar.classList.toggle("active"); // Toggle the 'active' class to open/close the sidebar
+      });
+    </script>
+  </body>
+</html>
