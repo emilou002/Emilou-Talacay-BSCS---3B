@@ -7,6 +7,64 @@
     <link rel="stylesheet" href="css/boostrap.css" />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/index.css" />
+    <style>
+.section {
+  padding: 40px 0;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.poster-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Mission and Vision Section */
+#mission-vision {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.mission, .vision {
+  width: 45%;
+}
+
+.mission h3, .vision h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.mission p, .vision p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Promotional Video Section */
+#promo-video .video-container {
+  margin-top: 20px;
+}
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+}
+
+    </style>
   </head>
   <body>
     <!-- Sidebar Navigation -->
@@ -29,8 +87,41 @@
     <div class="main">
       <!-- Sidebar Toggle Button for Mobile -->
       <div class="sidebar-toggle" id="sidebarToggle">&#9776;</div>
-
       <div class="container">
+        <!-- Poster Section -->
+        <section id="poster" class="section">
+          <h2 class="section-title">Welcome to Capten!</h2>
+          <p class="section-description">
+            Discover the finest food, made fresh just for you.
+          </p>
+          <img src="images/poster.png" alt="Capten Food Poster" class="poster-img" />
+        </section>
+
+        <!-- Mission and Vision Section -->
+        <section id="mission-vision" class="section">
+          <div class="mission">
+            <h3>Our Mission</h3>
+            <p>
+              At Capten, we strive to provide delicious, high-quality food that brings joy to every meal. We believe in using fresh ingredients and serving food with passion.
+            </p>
+          </div>
+          <div class="vision">
+            <h3>Our Vision</h3>
+            <p>
+              To be the go-to destination for food lovers who seek variety, taste, and quality. We envision a world where every meal is an experience.
+            </p>
+          </div>
+        </section>
+
+        <!-- Promotional Video Section -->
+        <section id="promo-video" class="section">
+          <h3>Watch Our Story</h3>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/u3O6PstN2zA?si=6H7KEn_TSLl3_0mR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </section>
+      <div class="container">
+        <h2>Foods we offer</h2>
         <div class="product-grid">
           <!-- Product Card 1 -->
           <div class="product-card">
